@@ -1,0 +1,50 @@
+body {
+    background-color: #f6f8fc;
+}
+
+.conteudo {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    background-color: white;
+}
+
+.conteudo .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.conteudo .backbtn {
+    padding: 5px;
+}
+
+.conteudo .heartBtn {
+    margin-right: 18px;
+    right: 10px;
+}
+
+.conteudo .heartImg {
+    width: 35px;
+    padding: 5px;
+    top: 0;
+}
+
+.conteudo .backimg {
+    width: 50px;
+}
+
+.conteudo .pokeImg {
+    display: flex;
+    justify-content: center; /* Added to center the image */
+    align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+    .conteudo {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}

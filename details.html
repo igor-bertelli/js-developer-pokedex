@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedetails</title>
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/details.css">
+</head>
+<body>
+    <section class="conteudo">
+        
+        <div class="row">
+            <div class="backBtn" style="cursor: pointer;" onclick="document.location='index.html'">
+                <img class="backimg" src="/assets/user-interface-ui-ux-back-600nw-1414395617.webp" alt="Voltar">
+            </div>
+
+            <div class="heartBtn" style="cursor: pointer;" onclick="alert('pokemon favoritado!')">
+                <img class="heartImg" src="/assets/2473091-200.png" alt="Heart">
+            </div>
+        </div>
+
+        <ol id="pokemonData">
+            <!-- ..... Pokemons here ..... -->
+            <li>
+            <h1>${pokemon.name}</h1>
+            <div class="pokeimg">
+            <img src="${pokemon.sprites.front_default}" class="pokemonImg" alt="${pokemon.name}">
+            </div>
+            <p>${pokemon.types[0].type.name}</p>
+            <p>${pokemon.weight}</p>
+            <p>${pokemon.height}</p>
+            <p>${pokemon.abilities[0].ability.name}</p>
+            <p>${pokemon.abilities[1].ability.name}</p>
+            <p>${pokemon.abilities[2].ability.name}</p>
+
+            </li>
+        </ol>
+    </section>
+
+    <script type="module" src="assets/js/details.js"></script>
+</body>
+</html>
