@@ -244,7 +244,7 @@ function displayPokemonDetails(pokemon) {
 
 function getEnglishFlavorText(pokemonSpecies) {
   for (let entry of pokemonSpecies.flavor_text_entries) {
-    if (entry.language.name === "en") {
+    if (entry.language.name === "pt-BR") {
       let flavor = entry.flavor_text.replace(/\f/g, " ");
       return flavor;
     }
