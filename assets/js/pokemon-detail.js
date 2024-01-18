@@ -235,7 +235,7 @@ function displayPokemonDetails(pokemon) {
     createAndAppendElement(statDiv, "progress", {
       className: "progress-bar",
       value: base_stat,
-      max: 100,
+      max: 120,
     });
   });
 
