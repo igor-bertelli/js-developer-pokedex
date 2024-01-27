@@ -1,6 +1,6 @@
 # Pokedex
 
-Bootcamp Desenvolvimento Frontend com Angular
+Desafio de projeto Bootcamp Desenvolvimento Frontend com Angular
 
 ## Descrição:
 
